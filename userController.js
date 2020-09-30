@@ -1,5 +1,5 @@
 const User = require("./UserModel");
-
+//commrnt
 exports.roleChecker = (req, res, next) => {
   User.find({ email: req.query.email }, (err, result) => {
     const role = Object.values(result[0])[Object.values(result[0]).length - 2]
